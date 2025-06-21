@@ -5,9 +5,13 @@ Transformer is an Attention-based model, introduced by Vaswani et al. (2017). Tr
 ## Encoder
 Encoder consists of N layers, each layer has the following structure:
 • Self-Attention Mechanism: Calculates the importance of each element in the input sequence compared to all other elements. The formula for calculating Attention is shown as follows:
+
 ![image](https://github.com/user-attachments/assets/b222e571-8902-4c15-8421-3483f524ce9c)
+
 • Feed-Forward Neural Network (FFNN): Two-layer linear neural network, applied independently to each position:
+
 ![image](https://github.com/user-attachments/assets/3fc12e67-3e2c-4481-8582-29d7100be10b)
+
 • Add & Norm: After each Self-Attention and FFNN layer is an addition and normalization step (Layer Normalization).
 ## Decoder
 Decoder also consists of N layers similar to Encoder, but has an additional Attention layer to focus on the output of Encoder.
